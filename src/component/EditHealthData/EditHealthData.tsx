@@ -29,6 +29,7 @@ const EditHealthData = () => {
         const newBP = {...userData.BP, value: e.target.value};
         const newUserData = {...userData, BP: newBP};
         changeUserData(newUserData, true)
+        console.log("commit added",newUserData)
     }
     return (
         <div>
